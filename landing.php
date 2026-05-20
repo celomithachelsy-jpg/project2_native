@@ -198,14 +198,14 @@ session_start();
                         paparan suara keras. Ketahui cara merawat telinga dengan benar agar
                         fungsi pendengaran tetap optimal sepanjang usia.
                     </p>
-                    <a href="information/telinga.php" class="card-link">Pelajari Lebih Lanjut &rarr;</a>
+                    <a href="telinga.php" class="card-link">Pelajari Lebih Lanjut &rarr;</a>
                 </div>
             </div>
 
             <!-- CARD HIDUNG -->
             <div class="card">
                 <div class="card-img-wrapper">
-                    <img src="assets/images/hidung.jfif" alt="Hidung">
+                    <img src="../assets/images/hidung.jfif" alt="Hidung">
                     <span class="card-badge">👃</span>
                 </div>
                 <div class="card-body">
@@ -216,14 +216,14 @@ session_start();
                         alergi, sinusitis, dan polip hidung dapat menurunkan kualitas hidup.
                         Pelajari cara menjaga hidung tetap sehat dan berfungsi baik.
                     </p>
-                    <a href="information/hidung.php" class="card-link">Pelajari Lebih Lanjut &rarr;</a>
+                    <a href="hidung.php" class="card-link">Pelajari Lebih Lanjut &rarr;</a>
                 </div>
             </div>
 
             <!-- CARD TENGGOROKAN -->
             <div class="card">
                 <div class="card-img-wrapper">
-                    <img src="assets/images/tenggorokan.jfif" alt="Tenggorokan">
+                    <img src="../assets/images/tenggorokan.png" alt="Tenggorokan">
                     <span class="card-badge">🗣️</span>
                 </div>
                 <div class="card-body">
@@ -234,7 +234,7 @@ session_start();
                         adalah masalah yang sering dijumpai. Temukan panduan perawatan dan
                         pencegahan yang efektif untuk menjaga tenggorokan tetap sehat.
                     </p>
-                    <a href="information/tenggorokan.php" class="card-link">Pelajari Lebih Lanjut &rarr;</a>
+                    <a href="tenggorokan.php" class="card-link">Pelajari Lebih Lanjut &rarr;</a>
                 </div>
             </div>
 
