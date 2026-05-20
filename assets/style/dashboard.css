@@ -1,0 +1,339 @@
+/* ================= DASHBOARD LAYOUT ================= */
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background: #f0f8ff; /* Sama dengan --bg-color landing page */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    width: 270px;
+    background: #ffffff; /* Putih bersih, selaras dengan navbar landing page */
+    box-shadow: 4px 0 20px rgba(2, 132, 199, 0.08);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    border-right: 1px solid #e0f2fe;
+}
+
+.sidebar h2 {
+    color: #0284c7; /* Biru utama, sama dengan --primary-color */
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 36px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.sidebar h2 i {
+    color: #0284c7;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-label {
+    color: #94a3b8;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    padding-left: 12px;
+    text-transform: uppercase;
+}
+
+.sidebar ul li {
+    margin-bottom: 4px;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #475569; /* Abu-abu sedang, selaras dengan teks landing page */
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 11px 16px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.sidebar ul li a i {
+    font-size: 1.1rem;
+    width: 22px;
+    text-align: center;
+    color: #94a3b8;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+}
+
+.sidebar ul li a:hover i,
+.sidebar ul li a.active i {
+    color: #ffffff;
+}
+
+.sidebar ul li a.logout {
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.06);
+}
+
+.sidebar ul li a.logout i {
+    color: #ef4444;
+}
+
+.sidebar ul li a.logout:hover {
+    background: #ef4444;
+    color: white;
+    box-shadow: 0 4px 14px rgba(239, 68, 68, 0.3);
+}
+
+.sidebar ul li a.logout:hover i {
+    color: white;
+}
+
+/* ================= MAIN CONTENT ================= */
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.main-content h1 {
+    color: #0f172a;
+    font-size: 2rem;
+    margin-bottom: 28px;
+    font-weight: 700;
+}
+
+/* ================= WELCOME CARD ================= */
+.welcome-card {
+    background: linear-gradient(135deg, #0284c7 0%, #38bdf8 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(2, 132, 199, 0.25);
+    margin-bottom: 36px;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-card h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.welcome-card p {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 1rem;
+    position: relative;
+    z-index: 2;
+    margin-top: 0 !important;
+}
+
+.welcome-card::after {
+    content: '\f0f1';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 160px;
+    opacity: 0.08;
+    z-index: 1;
+    color: white;
+}
+
+/* ================= STAT CARDS ================= */
+.stat-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-bottom: 36px;
+}
+
+.stat-card {
+    padding: 28px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.12);
+}
+
+.stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px rgba(2, 132, 199, 0.22);
+}
+
+.stat-icon {
+    font-size: 3rem;
+    opacity: 0.85;
+    flex-shrink: 0;
+}
+
+.stat-info h3 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.stat-info p {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+}
+
+/* Stat card colors — semua dalam palet biru THT Health */
+.stat-blue {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+}
+.stat-blue:hover { box-shadow: 0 14px 32px rgba(2, 132, 199, 0.35); }
+
+.stat-green {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
+}
+.stat-green:hover { box-shadow: 0 14px 32px rgba(14, 165, 233, 0.35); }
+
+.stat-orange {
+    background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 100%);
+}
+.stat-orange:hover { box-shadow: 0 14px 32px rgba(56, 189, 248, 0.35); }
+
+/* ================= DASHBOARD CARD (Tabel) ================= */
+.dashboard-card {
+    background: #ffffff;
+    padding: 28px 30px;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(2, 132, 199, 0.07);
+    margin-bottom: 28px;
+    width: 100%;
+    border-top: 3px solid #0284c7;
+}
+
+.dashboard-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.dashboard-card-header h3 {
+    color: #0284c7;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* ================= BUTTONS ================= */
+.btn-primary {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.88rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0369a1 0%, #075985 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.35);
+}
+
+.btn-icon {
+    border: none;
+    padding: 7px 11px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.85rem;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-edit  { background: #f59e0b; }
+.btn-edit:hover  { background: #d97706; transform: translateY(-1px); }
+
+.btn-delete { background: #ef4444; }
+.btn-delete:hover { background: #dc2626; transform: translateY(-1px); }
+
+.btn-view  { background: #0284c7; }
+.btn-view:hover  { background: #0369a1; transform: translateY(-1px); }
+
+/* ================= DASHBOARD TABLE ================= */
+.dashboard-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.dashboard-table th {
+    background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    color: white;
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.dashboard-table th:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.dashboard-table th:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dashboard-table td {
+    padding: 16px 18px;
+    border-bottom: 1px solid #e0f2fe;
+    color: #475569;
+    font-size: 0.93rem;
+    vertical-align: middle;
+}
+
+.dashboard-table tr:hover td {
+    background: #f0f8ff;
+}
+
+.dashboard-table tr:last-child td {
+    border-bottom: none;
+}
