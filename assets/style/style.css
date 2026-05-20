@@ -429,11 +429,19 @@ section h2::after {
     position: relative;
     overflow: hidden;
 }
-
-.card-img-wrapper img {
+.card-img-wrapper {
     width: 100%;
     height: 200px;
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
     display: block;
     transition: var(--transition);
 }

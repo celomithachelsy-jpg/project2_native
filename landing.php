@@ -187,7 +187,7 @@ session_start();
             <!-- CARD TELINGA -->
             <div class="card">
                 <div class="card-img-wrapper">
-                    <img src="assets/images/telinga.jfif" alt="Telinga">
+                    <img src="assets/images/telinga.png" alt="Telinga">
                     <span class="card-badge">🦻</span>
                 </div>
                 <div class="card-body">
@@ -205,7 +205,7 @@ session_start();
             <!-- CARD HIDUNG -->
             <div class="card">
                 <div class="card-img-wrapper">
-                    <img src="../assets/images/hidung.jfif" alt="Hidung">
+                    <img src="assets/images/hidung.png" alt="Hidung">
                     <span class="card-badge">👃</span>
                 </div>
                 <div class="card-body">
@@ -223,7 +223,7 @@ session_start();
             <!-- CARD TENGGOROKAN -->
             <div class="card">
                 <div class="card-img-wrapper">
-                    <img src="../assets/images/tenggorokan.png" alt="Tenggorokan">
+                    <img src="assets/images/tenggorokan.png" alt="Tenggorokan">
                     <span class="card-badge">🗣️</span>
                 </div>
                 <div class="card-body">
@@ -253,7 +253,7 @@ session_start();
             <!-- FEATURED CARD -->
             <div class="news-featured">
                 <div class="news-featured-img">
-                    <img src="assets/images/telinga.jfif" alt="Berita Telinga">
+                    <img src="assets/images/telinga.png" alt="Berita Telinga">
                     <!-- <span class="news-badge">⭐ Featured</span> -->
                 </div>
                 <div class="news-featured-body">
@@ -275,7 +275,7 @@ session_start();
             <div class="news-side">
 
                 <div class="news-side-card">
-                    <img src="assets/images/hidung.jfif" alt="Berita Hidung">
+                    <img src="assets/images/hidung.png" alt="Berita Hidung">
                     <div class="news-side-body">
                         <span class="news-meta">📅 Mei 2026</span>
                         <h4>Tips Menjaga Kesehatan Hidung</h4>
@@ -291,7 +291,7 @@ session_start();
                 </div>
 
                 <div class="news-side-card">
-                    <img src="assets/images/tenggorokan.jfif" alt="Berita Tenggorokan">
+                    <img src="assets/images/tenggorokan.png" alt="Berita Tenggorokan">
                     <div class="news-side-body">
                         <span class="news-meta">📅 Mei 2026</span>
                         <h4>Tips Menjaga Kesehatan Tenggorokan</h4>
@@ -323,7 +323,7 @@ session_start();
             <!-- MEMBER 1 -->
             <div class="member-card">
                 <div class="member-img-ring">
-                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Chelsy">
+                    <img src="assets/images/celoo.png" alt="Chelsy">
                 </div>
                 <h4>Chelsy Celomitha A.W</h4>
                 <p class="nim">(G43252217)</p>
@@ -342,7 +342,7 @@ session_start();
             <!-- MEMBER 2 -->
             <div class="member-card">
                 <div class="member-img-ring">
-                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Azza">
+                    <img src="assets/images/ziffa.png" alt="Azza">
                 </div>
                 <h4>Azza Nayla N.R</h4>
                 <p class="nim">(G43251965)</p>
@@ -361,7 +361,7 @@ session_start();
             <!-- MEMBER 3 -->
             <div class="member-card">
                 <div class="member-img-ring">
-                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Inka">
+                    <img src="assets/images/inka.png" alt="Inka">
                 </div>
                 <h4>Inka Julieta P.</h4>
                 <p class="nim">(G43251918)</p>
@@ -380,7 +380,7 @@ session_start();
             <!-- MEMBER 4 -->
             <div class="member-card">
                 <div class="member-img-ring">
-                    <img src="https://randomuser.me/api/portraits/women/47.jpg" alt="Maharani">
+                    <img src="assets/images/rara.png" alt="Maharani">
                 </div>
                 <h4>Maharani A.A</h4>
                 <p class="nim">(G43252053)</p>
